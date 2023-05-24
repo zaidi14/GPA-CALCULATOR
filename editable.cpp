@@ -132,6 +132,7 @@ main_menu();
 }                                                          
 
 void main_menu(){
+	system("cls");
 	cout<<"********** WELCOME TO GIKI CALCI **********";
 	int value;
 
@@ -214,7 +215,7 @@ int contact,grade,grade_2,reg_no; //declaring the values to be stored
 
 
 void giki_calci:: enter()  {     //this function will not return any value
-  
+system("cls");
 record recs;
 int no_students; 
 char X;
@@ -290,7 +291,7 @@ char choice_add;
 
 
 void giki_calci:: show()    //the function does not return any value 
-{
+{system("cls");
      int i=5;
     ifstream V;// to read file
     record rec;
@@ -338,7 +339,7 @@ void giki_calci:: show()    //the function does not return any value
 
 void giki_calci:: search()        //the function does not return any value
 
-{
+{system("cls");
 record recs;
 
 ifstream S;
@@ -425,7 +426,7 @@ cout<<endl;
 
 void giki_calci:: update()          //function does not return any value
 
-{
+{system("cls");
 
    record rec;
    ifstream f1;
@@ -433,7 +434,7 @@ void giki_calci:: update()          //function does not return any value
    int a;
    int c;
 
-cout << " EDIT CUSTOMER ACCOUNT ";
+cout << " EDIT STUDENT ACCOUNT ";
 cout<<endl;
    cout << "Enter Your Resgistration Number To Edit : ";
    cin>>a;
@@ -503,7 +504,7 @@ cout<<endl;
    rename("new.bin", "record.bin");
 
    cout << "STUDENT ACCOUNT UPDATE SUCCESSFULL";
-
+cout<<endl;
    cout << "Press any key to return back to main menu . ";
    getch();
    main_menu();
